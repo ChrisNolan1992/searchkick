@@ -12,8 +12,8 @@ before_script:
   - psql -c 'create database searchkick_test;' -U postgres
 notifications:
   email:
-    on_success: never
-    on_failure: change
+    on_success: always
+    #on_failure: always
 gemfile:
   - Gemfile
   - gemfiles/mongoid2.gemfile
